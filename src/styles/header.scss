@@ -1,0 +1,9 @@
+@import './base.scss';
+
+nav {
+   color: $color-primary;
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+   background-color: aqua;
+}
