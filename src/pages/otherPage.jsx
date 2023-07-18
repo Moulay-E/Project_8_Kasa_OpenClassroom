@@ -4,7 +4,9 @@ function OtherPage({ data }) {
    console.log(result);
    return (
       <>
-         <div>{result.picture[0]}</div>
+         <div>
+            <img src={result.pictures[0]} alt={result.description} />
+         </div>
          <div>
             <div>titre et sous titre</div>
             <div>nom img profile</div>

@@ -1,5 +1,8 @@
-.test {
+.home__gallery-grid {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    background-color: purple;
+}
+.home__gallery-grid__img {
+   width: 100%;
 }
