@@ -4,10 +4,10 @@ function HomeGallery({ data }) {
    console.log(data);
    return (
       <div className="home__gallery">
-         <Link to="/habitation">
-            <div className="home__gallery-grid">
-               {data.map((item, index) => (
-                  <figure key={index}>
+         <div className="home__gallery-grid">
+            {data.map((item, index) => (
+               <Link to={`/housing/${item.id}`} key={index}>
+                  <figure>
                      <img
                         src={item.cover}
                         alt={item.description}
@@ -15,9 +15,9 @@ function HomeGallery({ data }) {
                      ></img>
                      <figcaption>{item.title}</figcaption>
                   </figure>
-               ))}
-            </div>
-         </Link>
+               </Link>
+            ))}
+         </div>
       </div>
    );
 }

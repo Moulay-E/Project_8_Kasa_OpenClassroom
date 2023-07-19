@@ -1,6 +1,9 @@
-function OtherPage({ data }) {
-   let test = 'b9123946';
-   let result = data.find((item) => item.id === test);
+import { useParams } from 'react-router-dom';
+//Logement.jsx
+function Logement({ data }) {
+   const { id } = useParams();
+   // let test = 'b9123946';
+   let result = data.find((item) => item.id === id);
    console.log(result);
    return (
       <>
@@ -22,4 +25,4 @@ function OtherPage({ data }) {
       </>
    );
 }
-export default OtherPage;
+export default Logement;

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import Home from '../pages/home.jsx';
-import About from '../pages/about.jsx';
-import Header from './header.jsx';
+import Home from '../pages/Home.jsx';
+import About from '../pages/About.jsx';
+import Header from './Header.jsx';
 import ErrorPage from './error.jsx';
-import OtherPage from '../pages/otherPage.jsx';
+import Logement from '../pages/Logement.jsx';
 import data from '../data/data.json';
 
 function RouteConfig() {
@@ -14,8 +14,8 @@ function RouteConfig() {
             <Header />
             <Routes>
                <Route path="/" element={<Home />} />
-               <Route path="/about" element={<About />} />
-               <Route path="/habitation" element={<OtherPage data={data} />} />
+               <Route path="/About" element={<About />} />
+               <Route path="/housing/:id" element={<Logement data={data} />} />
                <Route path="*" element={<ErrorPage />} />
             </Routes>
          </Router>
