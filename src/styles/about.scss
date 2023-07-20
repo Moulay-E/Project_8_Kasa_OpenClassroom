@@ -1,0 +1,28 @@
+@import './base.scss';
+
+.about {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.about__picture {
+   height: 20%;
+   display: flex;
+   justify-content: center;
+}
+.about__picture-img {
+   height: 230px;
+   border-radius: 20px;
+   object-fit: cover;
+}
+
+.about__main {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   gap: 30px;
+}
+
+.about__main__collapse__text {
+   display: block;
+}

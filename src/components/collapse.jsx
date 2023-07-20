@@ -1,22 +1,48 @@
 import { useState } from 'react';
+import logoVector from '../asset/Vector.png';
 
-function Collapse({ title, description }) {
+function Collapse({ title, text, className }) {
    const [CollapseOpen, setCollapseOpen] = useState(false);
-   console.log('hello');
-   return CollapseOpen ? (
-      <div className="Collapse">
-         <div onClick={() => setCollapseOpen(false)}>
+   let [ClikCount, setClickCount] = useState(0);
+
+   const handleToggleCollapse = () => {
+      setCollapseOpen(!CollapseOpen);
+      setClickCount(ClikCount + 1);
+   };
+   //    const getAnimationClass = () => {
+   //       const animationClasses = ['rotate', 'rotateReverse'];
+   //       return animationClasses[ClikCount % animationClasses.length];
+   //    };
+   const getAnimationClass = () => {
+      if (ClikCount === 1) {
+         console.log(1);
+         return 'rotate';
+      } else if (ClikCount === 2) {
+         console.log(2);
+         return 'rotateReverse';
+      } else if (ClikCount === 3) {
+         setClickCount((ClikCount = 1));
+         console.log(3);
+         return '';
+      }
+      return '';
+   };
+
+   return (
+      <div className="collapse">
+         <div className="collapse__header">
             <h2>{title}</h2>
-            <p>collapseLogo</p>
+            <img
+               onClick={handleToggleCollapse}
+               src={logoVector}
+               alt="logo Vector"
+               className={`collapse__header__logo 
+               ${getAnimationClass()} `}
+            />
          </div>
-      </div>
-   ) : (
-      <div className="Collapse">
-         <div onClick={() => setCollapseOpen(true)}>
-            <h2>{title}</h2>
-            <p>collapseLogo</p>
-            <p>{description}</p>
-         </div>
+         {CollapseOpen && (
+            <div className={`Collapse__txt ${className}`}>{text}</div>
+         )}
       </div>
    );
 }

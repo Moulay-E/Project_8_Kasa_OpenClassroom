@@ -1,14 +1,18 @@
 import { useParams } from 'react-router-dom';
-//Logement.jsx
+import Collapse from '../components/Collapse';
+
 function Logement({ data }) {
    const { id } = useParams();
-   // let test = 'b9123946';
    let result = data.find((item) => item.id === id);
    console.log(result);
    return (
-      <>
+      <div className="logement">
          <div>
-            <img src={result.pictures[0]} alt={result.description} />
+            <img
+               src={result.pictures[0]}
+               alt={result.description}
+               className="logement__img"
+            />
          </div>
          <div>
             <div>titre et sous titre</div>
@@ -19,10 +23,18 @@ function Logement({ data }) {
             <p>star</p>
          </div>
          <div>
-            <p>description</p>
-            <p>equipement</p>
+            <Collapse
+               title={'Description'}
+               text={result.description}
+               className={'description'}
+            />
+            <Collapse
+               title={'Equipement'}
+               text={result.equipments}
+               className={'equipments'}
+            />
          </div>
-      </>
+      </div>
    );
 }
 export default Logement;

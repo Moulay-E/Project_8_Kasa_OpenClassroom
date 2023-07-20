@@ -1,0 +1,53 @@
+@import './base.scss';
+
+.collapse {
+   background-color: $color-primary;
+   width: 582px;
+   border-radius: 5px;
+}
+.collapse__header {
+   display: flex;
+   justify-content: space-between;
+}
+.collapse__header__logo {
+   width: 24px;
+   height: 13px;
+   align-self: center;
+}
+.Collapse__txt {
+   color: $color-primary;
+   background-color: $color-collapse-txt-background;
+   border-radius: 5px;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(-85deg);
+   }
+   100% {
+      transform: rotate(-180deg);
+   }
+}
+.rotate {
+   animation: rotate 0.5s steps(4) forwards;
+   transform-origin: center;
+}
+
+@keyframes rotateReverse {
+   0% {
+      transform: rotate(-180deg);
+   }
+   50% {
+      transform: rotate(-85deg);
+   }
+   100% {
+      transform: rotate(0);
+   }
+}
+.rotateReverse {
+   animation: rotateReverse 0.5s steps(4) forwards;
+   transform-origin: center;
+}
