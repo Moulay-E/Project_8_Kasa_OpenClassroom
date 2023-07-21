@@ -8,13 +8,19 @@
 .collapse__header {
    display: flex;
    justify-content: space-between;
+   color: $color-secondary;
+   padding-left: 1vw;
+   align-items: center;
+   height: 52px;
 }
 .collapse__header__logo {
    width: 24px;
    height: 13px;
    align-self: center;
+   margin-right: 2vw;
+   cursor: pointer;
 }
-.Collapse__txt {
+.collapse__txt {
    color: $color-primary;
    background-color: $color-collapse-txt-background;
    border-radius: 5px;

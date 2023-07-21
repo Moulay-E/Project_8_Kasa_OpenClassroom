@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logoVector from '../asset/Vector.png';
 
-function Collapse({ title, text, className }) {
+function Collapse({ title, text, collapseClass, textClass }) {
    const [CollapseOpen, setCollapseOpen] = useState(false);
    let [ClikCount, setClickCount] = useState(0);
 
@@ -29,7 +29,7 @@ function Collapse({ title, text, className }) {
    };
 
    return (
-      <div className="collapse">
+      <div className={`collapse ${collapseClass}`}>
          <div className="collapse__header">
             <h2>{title}</h2>
             <img
@@ -41,7 +41,7 @@ function Collapse({ title, text, className }) {
             />
          </div>
          {CollapseOpen && (
-            <div className={`Collapse__txt ${className}`}>{text}</div>
+            <div className={`collapse__txt ${textClass}`}>{text}</div>
          )}
       </div>
    );

@@ -1,3 +1,10 @@
+.homeTxt {
+   display: flex;
+   color: red;
+   width: 86%;
+   height: 20%;
+   position: relative;
+}
 .home__gallery-grid {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;

@@ -6,6 +6,7 @@ function Logement({ data }) {
    const { id } = useParams();
    let result = data.find((item) => item.id === id);
    console.log(result);
+   const [firstName, lastName] = result.host.name.split(' ');
    return (
       <div className="logement">
          <Carousel array={result} />
@@ -28,7 +29,14 @@ function Logement({ data }) {
             </div>
             <div className="logement__container__aside">
                <div className="logement__container__aside__profile">
-                  <h3 key={result.host.name}>{result.host.name}</h3>
+                  <h3
+                     className="logement__container__aside__profile_h3"
+                     key={result.host.name}
+                  >
+                     {firstName}
+                     <br />
+                     {lastName}
+                  </h3>
                   <img src={result.host.picture} key={result} alt="profile" />
                </div>
                <div className="logement__container__aside__star">
@@ -40,12 +48,14 @@ function Logement({ data }) {
             <Collapse
                title={'Description'}
                text={result.description}
-               className={'description'}
+               collapseClass={'logement__collapse__description'}
+               textClass={'description'}
             />
             <Collapse
                title={'Equipement'}
                text={result.equipments}
-               className={'equipments'}
+               collapseClass={'logement__collapse__equipement'}
+               textClass={'equipments'}
             />
          </div>
       </div>

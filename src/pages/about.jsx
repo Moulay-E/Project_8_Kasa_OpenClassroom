@@ -15,22 +15,26 @@ function About(data) {
             <Collapse
                title={'titre'}
                text={'hello'}
-               className={'about__main__collapse__text'}
+               collapseClass={'about__main__1'}
+               textClass={'about__main__collapse__text'}
             />
             <Collapse
                title={'titre'}
                text={'hello'}
-               className={'about__main__collapse__text'}
+               collapseClass={'about__main__1'}
+               textClass={'about__main__collapse__text'}
             />
             <Collapse
                title={'titre'}
                text={'hello'}
-               className={'about__main__collapse__text'}
+               collapseClass={'about__main__1'}
+               textClass={'about__main__collapse__text'}
             />
             <Collapse
                title={'titre'}
                text={'hello'}
-               className={'about__main__collapse__text'}
+               collapseClass={'about__main__1'}
+               textClass={'about__main__collapse__text'}
             />
          </div>
       </div>

@@ -5,7 +5,7 @@ import data from '../data/data.json';
 function Home() {
    return (
       <>
-         <h1>Home</h1>;
+         <h1 className="homeTxt">Home</h1>;
          <HomeGallery data={data} />;
       </>
    );
