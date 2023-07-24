@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/main.scss';
-import RouteConfig from './components/Routes.jsx';
+import RouteConfig from './components/RouteConfig.jsx';
 
 function App() {
    return (
