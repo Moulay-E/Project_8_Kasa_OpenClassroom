@@ -9,8 +9,8 @@ function Footer() {
                <img src={kasaLogoFooter} alt="kasa logo" />
             </div>
             <div className="footer__container__text">
-               <h3>© 2020 Kasa.</h3>
-               <h3> All rights reserved</h3>
+               <h4>© 2020 Kasa.</h4>
+               <h4> All rights reserved</h4>
             </div>
          </div>
       </footer>

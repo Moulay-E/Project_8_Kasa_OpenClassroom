@@ -4,6 +4,7 @@
    width: 100%;
    display: grid;
    justify-items: center;
+   margin-bottom: 4%;
 }
 // Carousell
 .logement__carousel {
@@ -49,6 +50,7 @@
    justify-content: space-between;
    width: 86vw;
    color: $color-primary;
+   margin-top: 2%;
 }
 
 .logement__container__header {
@@ -66,28 +68,7 @@
 .logement__container__header__tags {
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
-}
-
-.logement__container__aside {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end;
-}
-.logement__container__aside__profile {
-   display: flex;
-   flex-direction: row;
-}
-.logement__container__aside__profile_h3 {
-   width: 6.4vw;
-   font-size: 18px;
-}
-.logement__container__aside__profile img {
-   border-radius: 50%;
-}
-
-.logement__container__header__tags {
-   justify-content: space-between;
+   gap: 4%;
    padding: 0;
    width: 25.347vw;
 }
@@ -101,6 +82,57 @@
    padding-right: 8px;
    font-size: 0.972vw;
 }
+
+.logement__container__aside {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+.logement__container__aside__profile {
+   display: flex;
+   flex-direction: row;
+   height: 63px;
+   // gap: 5%;
+}
+.logement__container__aside__profile__h3 {
+   width: 6.4vw;
+   font-size: 18px;
+}
+.logement__container__aside__profile__h3 h3 {
+   margin-top: 0;
+}
+.logement__container__aside__profile img {
+   height: 100%;
+}
+.logement__container__aside__profile img {
+   border-radius: 50%;
+   width: 4.444vw;
+   height: 4.444vw;
+}
+.logement__container__aside__star__container {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 13.611vw;
+}
+.logement__container__aside__star__container li {
+   display: flex;
+   align-self: center;
+}
+.starActive {
+   // height: 36px;
+   object-fit: cover;
+}
+// .starActive img {
+//       height: 36px;
+//    object-fit: cover;
+// }
+.starDisabled {
+   margin-right: 3%;
+}
+//end aside
+
 // collapse
 .logement__collapse {
    display: flex;
@@ -113,4 +145,9 @@
 }
 .logement__collapse__equipement {
    width: 40.417vw;
+   display: flex;
+   flex-direction: column;
+}
+.logement__collapse__equipement__ul {
+   list-style-type: none;
 }

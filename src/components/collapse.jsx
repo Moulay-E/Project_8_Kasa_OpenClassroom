@@ -9,10 +9,7 @@ function Collapse({ title, text, collapseClass, textClass }) {
       setCollapseOpen(!CollapseOpen);
       setClickCount(ClikCount + 1);
    };
-   //    const getAnimationClass = () => {
-   //       const animationClasses = ['rotate', 'rotateReverse'];
-   //       return animationClasses[ClikCount % animationClasses.length];
-   //    };
+
    const getAnimationClass = () => {
       if (ClikCount === 1) {
          console.log(1);
@@ -40,11 +37,19 @@ function Collapse({ title, text, collapseClass, textClass }) {
                ${getAnimationClass()} `}
             />
          </div>
-         {CollapseOpen && (
-            <div className={`collapse__txt ${textClass}`}>{text}</div>
-         )}
+         <div
+            className={`collapse__txt ${textClass} ${
+               CollapseOpen ? 'collapse__txt__open' : 'collapse__txt__close'
+            }`}
+         >
+            <p className="collapse__txt__p">{text}</p>
+         </div>
       </div>
    );
 }
 
 export default Collapse;
+
+// {CollapseOpen && (
+//    <div className={`collapse__txt ${textClass}`}>{text}</div>
+// )}
