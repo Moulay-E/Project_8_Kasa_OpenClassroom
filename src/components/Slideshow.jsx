@@ -2,6 +2,8 @@ import { useState } from 'react';
 import logoSlide from '../asset/logoCarousel.png';
 
 const Carousel = ({ array }) => {
+   let doIHideComponent = array.pictures.length > 1 ? true : false;
+   console.log(doIHideComponent);
    const [activeSlide, setActiveSlide] = useState(0);
    const goToNexSlide = () => {
       setActiveSlide((prevIndex) =>
@@ -25,15 +27,21 @@ const Carousel = ({ array }) => {
             onClick={goToNexSlide}
             src={logoSlide}
             alt="arrow-right"
-            className="arrow-right"
+            className={`arrow-right ${
+               doIHideComponent === true ? 'visible' : 'hide'
+            }`}
          />
          <img
             onClick={goToPreviousSlide}
             src={logoSlide}
             alt="arrow-left"
-            className="arrow-left"
+            className={`arrow-left ${doIHideComponent ? 'visible' : 'hide'}`}
          />
-         <p className="logement__carousel__index">
+         <p
+            className={`logement__carousel__index ${
+               doIHideComponent ? 'visible' : 'hide'
+            }`}
+         >
             {`${activeSlide + 1}/ ${array.pictures.length}`}
          </p>
       </div>

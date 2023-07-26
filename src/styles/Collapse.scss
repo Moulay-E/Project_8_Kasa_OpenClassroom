@@ -13,6 +13,7 @@
    padding-left: 1vw;
    align-items: center;
    height: 52px;
+   font-size: 1.25vw;
 }
 .collapse__header__logo {
    width: 24px;
@@ -30,7 +31,7 @@
    overflow: hidden;
    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-.collapse__txt__p {
+.collapse__txt__div {
    margin-left: 4%;
    margin-right: 4%;
 }

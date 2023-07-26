@@ -1,13 +1,27 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Collapse from '../components/Collapse';
-import Carousel from '../components/Carousel';
+import Slideshow from '../components/Slideshow.jsx';
 import starActive from '../asset/star-active.png';
 import starDisabled from '../asset/starDiasabled.png';
 
 function Logement({ data }) {
    const { id } = useParams();
+   const navigate = useNavigate();
+
    let result = data.find((item) => item.id === id);
-   console.log(result);
+   console.log(result, 'result');
+
+   //every time the component result or navigate is update , use effect check it
+   useEffect(() => {
+      if (!result) {
+         navigate('*');
+      }
+   }, [result, navigate]);
+   if (!result) {
+      return <div>Logement non trouvé</div>;
+   }
+
    const [firstName, lastName] = result.host.name.split(' ');
    let starRating = parseInt(result.rating);
    let starDiasabledCount = 5 - starRating;
@@ -33,7 +47,7 @@ function Logement({ data }) {
 
    return (
       <div className="logement">
-         <Carousel array={result} />
+         <Slideshow array={result} />
          <div className="logement__container">
             <div className="logement__container__header">
                <div className="logement__container__header__title">

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import logo from './../asset/LOGO.png';
 
 function Header() {
-   // add a class selscted at the click the show a border under
    const [selectedItem, setSelectedItem] = useState(null);
    const handleItemClick = (itemName) => {
       setSelectedItem(itemName);

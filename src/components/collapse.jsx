@@ -42,7 +42,7 @@ function Collapse({ title, text, collapseClass, textClass }) {
                CollapseOpen ? 'collapse__txt__open' : 'collapse__txt__close'
             }`}
          >
-            <p className="collapse__txt__p">{text}</p>
+            <div className="collapse__txt__div">{text}</div>
          </div>
       </div>
    );

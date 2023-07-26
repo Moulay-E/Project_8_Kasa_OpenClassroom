@@ -25,16 +25,21 @@
    position: absolute;
    left: 104px;
    transform: rotate(180deg);
-   cursor: pointer;
-   top: 50%;
+   top: 45%;
    left: 1.5vw;
 }
 .arrow-right {
    position: absolute;
    right: 20%;
-   cursor: pointer;
-   top: 50%;
+   top: 45%;
    right: 1.5vw;
+}
+.visible {
+   opacity: 1;
+   cursor: pointer;
+}
+.hide {
+   opacity: 0;
 }
 
 .logement__carousel__index {
@@ -42,6 +47,7 @@
    color: #fff;
    bottom: 1.5vh;
    left: 50%;
+   font-size: 18px;
 }
 // end carousel start text
 .logement__container {
@@ -81,6 +87,9 @@
    padding-left: 8px;
    padding-right: 8px;
    font-size: 0.972vw;
+   display: flex;
+   align-items: center;
+   text-align: center;
 }
 
 .logement__container__aside {
@@ -95,11 +104,14 @@
    // gap: 5%;
 }
 .logement__container__aside__profile__h3 {
-   width: 6.4vw;
+   width: 10.4vw;
    font-size: 18px;
+   text-align: right;
+   margin-right: 4%;
 }
 .logement__container__aside__profile__h3 h3 {
    margin-top: 0;
+   font-size: 1.25vw;
 }
 .logement__container__aside__profile img {
    height: 100%;
@@ -121,13 +133,9 @@
    align-self: center;
 }
 .starActive {
-   // height: 36px;
    object-fit: cover;
 }
-// .starActive img {
-//       height: 36px;
-//    object-fit: cover;
-// }
+
 .starDisabled {
    margin-right: 3%;
 }
