@@ -4,14 +4,15 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-bottom: 4%;
-   padding-top: 4%;
 }
 .errorPage__container {
    width: 86vw;
    display: flex;
+   gap: 15vh;
    flex-direction: column;
    align-items: center;
+   margin-top: 14vh;
+   margin-bottom: 14vh;
 }
 .errorPage__container__img404 {
    display: flex;
@@ -32,4 +33,24 @@ main {
 }
 a {
    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+   .errorPage__container__img404 img {
+      height: 99px;
+      width: 198px;
+   }
+   .errorPage__container__text h2 {
+      font-size: 18px;
+      font-weight: 500;
+   }
+   .errorPage__container__link h4 {
+      font-size: 14px;
+      font-weight: 500;
+   }
+   .line-break {
+      display: block;
+      content: '';
+      clear: both;
+   }
 }

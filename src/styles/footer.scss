@@ -23,3 +23,13 @@ footer {
 .footer__container__text h4 {
    margin: 0%;
 }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+   .footer__container__img {
+      height: 27.84px;
+   }
+   .footer__container__text {
+      font-size: 12px;
+      width: 30%;
+   }
+}

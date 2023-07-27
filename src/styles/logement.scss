@@ -107,7 +107,7 @@
    width: 10.4vw;
    font-size: 18px;
    text-align: right;
-   margin-right: 4%;
+   padding-right: 6%;
 }
 .logement__container__aside__profile__h3 h3 {
    margin-top: 0;
@@ -158,4 +158,106 @@
 }
 .logement__collapse__equipement__ul {
    list-style-type: none;
+}
+
+///////////////////////media
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+   .home__gallery-grid {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 255px;
+      padding: 0;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      gap: 27px;
+   }
+
+   .logement {
+      margin-bottom: 20px;
+   }
+   .logement__carousel {
+      height: 225px;
+   }
+   .arrow- {
+      &right {
+         width: 11.67px;
+         height: 19.8px;
+      }
+      &left {
+         width: 11.67px;
+         height: 19.8px;
+      }
+   }
+   .logement__carousel__index {
+      opacity: 0;
+   }
+
+   .logement__container {
+      flex-direction: column;
+
+      &__header {
+         width: 100%;
+      }
+
+      &__header__title {
+         & h2 {
+            font-size: 18px;
+         }
+         & h3 {
+            font-size: 14px;
+         }
+      }
+   }
+   .logement__container__header__tags {
+      width: 100%;
+      &__li {
+         width: 84px;
+         height: 18px;
+         font-size: 10px;
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   .logement__container__aside {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .logement__container__aside__star {
+      width: 40%;
+   }
+   .starActive img {
+      height: 18px;
+      width: 18px;
+   }
+   .starDisabled img {
+      height: 13px;
+      width: 13px;
+   }
+
+   .logement__container__aside__profile {
+      height: 33px;
+   }
+   .logement__container__aside__profile__h3 h3 {
+      font-size: 12px;
+      width: auto;
+   }
+   .logement__container__aside__profile img {
+      border-radius: 50%;
+      width: 33px;
+      height: 33px;
+   }
+
+   .logement__collapse {
+      flex-direction: column;
+      gap: 20px;
+   }
+   .logement__collapse__description {
+      width: 100%;
+   }
+   .logement__collapse__equipement {
+      width: 100%;
+   }
 }

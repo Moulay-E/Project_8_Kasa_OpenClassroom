@@ -9,7 +9,11 @@ function ErrorPage() {
                <img src={errorImg} alt="error 404" />
             </div>
             <div className="errorPage__container__text">
-               <h2>Oups! La page que vous demandez n'existe pas.</h2>
+               <h2>
+                  Oups! La page que
+                  <span className="line-break"></span>
+                  vous demandez n'existe pas.
+               </h2>
             </div>
             <div className="errorPage__container__link">
                <Link to={'/'}>

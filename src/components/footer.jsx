@@ -5,12 +5,11 @@ function Footer() {
    return (
       <footer>
          <div className="footer__container">
-            <div>
+            <div className="footer__container__img">
                <img src={kasaLogoFooter} alt="kasa logo" />
             </div>
             <div className="footer__container__text">
-               <h4>© 2020 Kasa.</h4>
-               <h4> All rights reserved</h4>
+               <h4>© 2020 Kasa. All rights reserved</h4>
             </div>
          </div>
       </footer>

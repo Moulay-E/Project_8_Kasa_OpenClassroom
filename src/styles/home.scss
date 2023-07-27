@@ -4,7 +4,7 @@
    display: flex;
    align-items: center;
    flex-direction: column;
-   margin-bottom: 4%;
+   margin-bottom: 2%;
 }
 .home__banner__img {
    width: 86vw;
@@ -90,4 +90,25 @@ figcaption {
    justify-content: left;
    align-items: center;
    font-size: 1.125em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+   .home__banner {
+      margin-bottom: 10px;
+   }
+   .home__banner__img {
+      width: 89%;
+      height: 111px;
+   }
+   .home__banner img {
+      border-radius: 10px;
+   }
+   .home__banner__text__container {
+      text-align: left;
+      left: 55%;
+   }
+   .home__banner__text__container__h2 {
+      font-size: 24px;
+      width: 76%;
+   }
 }

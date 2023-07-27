@@ -75,3 +75,17 @@
    animation: rotateReverse 0.5s steps(4) forwards;
    transform-origin: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+   .collapse__header {
+      font-size: 13px;
+      height: 30px;
+   }
+   .collapse__header__logo {
+      height: 9.14px;
+      width: 16px;
+   }
+   .collapse__txt__div {
+      font-size: 12px;
+   }
+}

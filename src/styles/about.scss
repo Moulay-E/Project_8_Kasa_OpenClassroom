@@ -9,22 +9,22 @@
    height: 20%;
    display: flex;
    justify-content: center;
-   margin-bottom: 4%;
 }
 .about__picture-img {
-   height: 230px;
+   height: 223px;
    border-radius: 20px;
    object-fit: cover;
-   width: 86vw;
+   width: 89%;
 }
 
 .about__main {
    display: flex;
    flex-direction: column;
    align-self: center;
-   gap: 30px;
-   width: 86vw;
-   margin-bottom: 4%;
+   gap: 20px;
+   width: 89%;
+   margin-bottom: 20px;
+   margin-top: 20px;
 }
 
 .about__main__collapse__text {
