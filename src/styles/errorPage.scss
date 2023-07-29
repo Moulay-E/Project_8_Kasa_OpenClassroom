@@ -24,12 +24,18 @@ main {
 }
 .errorPage__container__text {
    color: $color-primary;
-   font-size: 2.25em;
    text-align: center;
+}
+.errorPage__container__text h2 {
+   font-size: 36px;
+   font-weight: 500;
 }
 .errorPage__container__link__h4 {
    color: $color-primary;
-   font-size: 1.125em;
+}
+.errorPage__container__link__h4 h4 {
+   font-size: 18px;
+   font-weight: 500;
 }
 a {
    text-decoration: none;
