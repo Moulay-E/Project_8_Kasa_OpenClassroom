@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeGallery from '../components/homeGallery';
+import HomeGallery from '../components/HomeGallery';
 import data from '../data/data.json';
 import homeBannerImg from '../asset/homeBannerImg.png';
 
