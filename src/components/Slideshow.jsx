@@ -3,7 +3,6 @@ import logoSlide from '../asset/logoCarousel.png';
 
 const Carousel = ({ array }) => {
    let doIHideComponent = array.pictures.length > 1 ? true : false;
-   console.log(doIHideComponent);
    const [activeSlide, setActiveSlide] = useState(0);
    const goToNexSlide = () => {
       setActiveSlide((prevIndex) =>

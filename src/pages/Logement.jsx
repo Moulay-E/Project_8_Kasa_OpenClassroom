@@ -10,7 +10,7 @@ function Logement({ data }) {
    const navigate = useNavigate();
 
    let result = data.find((item) => item.id === id);
-   console.log(result, 'result');
+   // console.log(result, 'result');
 
    //every time the component result or navigate is update , use effect check it
    useEffect(() => {
@@ -25,7 +25,6 @@ function Logement({ data }) {
    const [firstName, lastName] = result.host.name.split(' ');
    let starRating = parseInt(result.rating);
    let starDiasabledCount = 5 - starRating;
-   console.log(starDiasabledCount, 'ddd');
 
    const activeStars = [];
    for (let i = 0; i < starRating; i++) {
@@ -98,7 +97,7 @@ function Logement({ data }) {
                textClass={'description'}
             />
             <Collapse
-               title={'Equipement'}
+               title={'Équipement'}
                text={
                   <ul className="logement__collapse__equipement__ul">
                      {result.equipments.map((item, index) => (

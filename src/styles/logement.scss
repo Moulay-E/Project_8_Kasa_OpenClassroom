@@ -65,10 +65,15 @@
    width: 44.097vw;
 }
 .logement__container__header__title h2 {
-   font-size: 2.25vw;
+   font-size: 36px;
+   margin-bottom: 0;
+   font-weight: 500;
 }
 .logement__container__header__title h3 {
-   font-size: 1.25vw;
+   font-size: 18px;
+   margin-top: 0;
+   margin-bottom: 0;
+   font-weight: 500;
 }
 
 .logement__container__header__tags {
@@ -83,10 +88,10 @@
    background-color: $color-primary;
    border-radius: 10px;
    color: #fff;
-   padding: 5px;
    padding-left: 8px;
    padding-right: 8px;
-   font-size: 0.972vw;
+   font-size: 14px;
+   padding: 3px;
    display: flex;
    align-items: center;
    text-align: center;
@@ -96,22 +101,22 @@
    display: flex;
    flex-direction: column;
    align-items: flex-end;
+   padding-top: 3%;
 }
 .logement__container__aside__profile {
    display: flex;
    flex-direction: row;
    height: 63px;
-   // gap: 5%;
 }
 .logement__container__aside__profile__h3 {
    width: 10.4vw;
-   font-size: 18px;
    text-align: right;
    padding-right: 6%;
 }
 .logement__container__aside__profile__h3 h3 {
    margin-top: 0;
-   font-size: 1.25vw;
+   font-size: 18px;
+   font-weight: 500;
 }
 .logement__container__aside__profile img {
    height: 100%;
@@ -125,7 +130,7 @@
    list-style-type: none;
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-end;
    width: 13.611vw;
 }
 .logement__container__aside__star__container li {
@@ -158,11 +163,12 @@
 }
 .logement__collapse__equipement__ul {
    list-style-type: none;
+   padding: 0;
 }
 
 ///////////////////////media
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1020px) {
    .home__gallery-grid {
       grid-template-columns: 1fr;
       grid-auto-rows: 255px;
@@ -223,6 +229,7 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
+      padding: 0;
    }
 
    .logement__container__aside__star {
@@ -239,6 +246,13 @@
 
    .logement__container__aside__profile {
       height: 33px;
+      gap: 4%;
+      width: 40%;
+      justify-content: flex-end;
+   }
+   .logement__container__aside__profile__h3 {
+      padding: 0;
+      width: auto;
    }
    .logement__container__aside__profile__h3 h3 {
       font-size: 12px;

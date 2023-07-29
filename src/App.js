@@ -3,6 +3,7 @@ import './styles/main.scss';
 import RouteConfig from './components/RouteConfig.jsx';
 
 function App() {
+   document.title = 'Kasa';
    return (
       <div className="App">
          <RouteConfig />

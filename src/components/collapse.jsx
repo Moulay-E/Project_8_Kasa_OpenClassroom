@@ -12,14 +12,11 @@ function Collapse({ title, text, collapseClass, textClass }) {
 
    const getAnimationClass = () => {
       if (ClikCount === 1) {
-         console.log(1);
          return 'rotate';
       } else if (ClikCount === 2) {
-         console.log(2);
          return 'rotateReverse';
       } else if (ClikCount === 3) {
          setClickCount((ClikCount = 1));
-         console.log(3);
          return '';
       }
       return '';

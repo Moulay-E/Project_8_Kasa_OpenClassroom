@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function HomeGallery({ data }) {
-   console.log(data);
+   // console.log(data);
    return (
       <div className="home">
          <div className="home__gallery">
