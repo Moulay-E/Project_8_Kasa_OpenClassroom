@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeGallery from '../components/HomeGallery';
+import Card from '../components/Card';
 import data from '../data/data.json';
 import homeBannerImg from '../asset/homeBannerImg.png';
 
@@ -16,7 +16,7 @@ function Home() {
                </div>
             </div>
          </div>
-         <HomeGallery data={data} />;
+         <Card data={data} />;
       </>
    );
 }

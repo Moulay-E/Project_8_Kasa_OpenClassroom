@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import logo from './../asset/LOGO.png';
 
-function Header() {
+function Banner() {
    const [selectedItem, setSelectedItem] = useState(null);
    const handleItemClick = (itemName) => {
       setSelectedItem(itemName);
@@ -36,4 +36,4 @@ function Header() {
    );
 }
 
-export default Header;
+export default Banner;

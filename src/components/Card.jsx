@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function HomeGallery({ data }) {
+function Card({ data }) {
    // console.log(data);
    return (
       <div className="home">
@@ -23,4 +23,4 @@ function HomeGallery({ data }) {
       </div>
    );
 }
-export default HomeGallery;
+export default Card;

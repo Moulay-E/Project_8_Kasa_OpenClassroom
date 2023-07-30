@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import Header from './Header.jsx';
+import Banner from './Banner.jsx';
 import Home from '../pages/home.jsx';
 import About from '../pages/about.jsx';
 import ErrorPage from './Error.jsx';
@@ -12,7 +12,7 @@ function RouteConfig() {
    return (
       <div className="route">
          <Router>
-            <Header />
+            <Banner />
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/About" element={<About />} />
