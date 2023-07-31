@@ -81,7 +81,7 @@
    transform-origin: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 900px) {
    .collapse__header {
       font-size: 13px;
       height: 30px;
@@ -93,9 +93,6 @@
    .collapse__txt__div {
       font-size: 12px;
    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 1020px) {
    .collapse__header h2 {
       font-size: 13px;
    }
