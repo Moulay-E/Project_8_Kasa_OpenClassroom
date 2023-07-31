@@ -46,7 +46,3 @@ function Collapse({ title, text, collapseClass, textClass }) {
 }
 
 export default Collapse;
-
-// {CollapseOpen && (
-//    <div className={`collapse__txt ${textClass}`}>{text}</div>
-// )}
